@@ -39,7 +39,7 @@ void Diary::write(const std::string& text) {
 // Закрытие дневника
 void Diary::lock() { isOpen = false; }
 
-
+// Чтение
 std::string Diary::read() {
     if (isOpen) {
         return content;
